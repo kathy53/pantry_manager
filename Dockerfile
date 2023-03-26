@@ -13,5 +13,5 @@ EXPOSE 8888
 #RUN jupyter notebook --generate-config
 #RUN echo "c.NotebookApp.token = ''" >> /root/.jupyter/jupyter_notebook_config.py
 ENV PYTHONPATH "${PYTHONPATH}:/usr/src/app"
-CMD ["jupyter", "lab","--no-browser","--allow-root","--ip=0.0.0.0"]
+#CMD ["jupyter", "lab","--no-browser","--allow-root","--ip=0.0.0.0"]
 #CMD ["/bin/bash"]
